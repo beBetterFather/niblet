@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/static/css/bootstrap.min.css?v=3.3.6}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/css/font-awesome.css?v=4.4.0}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/css/animate.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/static/css/style.css?v=4.1.0}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div>
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><center>欢迎访问新智认知运维系统</center></h5>
+                        <div class="ibox-tools">
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="carousel slide" id="carousel2">
+                            <ol class="carousel-indicators">
+                                <li data-slide-to="0" data-target="#carousel2" class="active"></li>
+                                <li data-slide-to="1" data-target="#carousel2"></li>
+                                <li data-slide-to="2" data-target="#carousel2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img alt="image" class="img-responsive" th:src="@{/static/img/p_big1.jpg}">
+                                    <div class="carousel-caption">
+                                        <p>This is simple caption 1</p>
+                                    </div>
+                                </div>
+                                <div class="item center-block">
+                                    <img alt="image" class="img-responsive" th:src="@{/static/img/p_big3.jpg}">
+                                    <div class="carousel-caption">
+                                        <p>This is simple caption 2</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img alt="image" class="img-responsive" th:src="@{/static/img/p_big2.jpg}">
+                                    <div class="carousel-caption">
+                                        <p>This is simple caption 3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a data-slide="prev" href="carousel.html#carousel2" class="left carousel-control">
+                                <span class="icon-prev"></span>
+                            </a>
+                            <a data-slide="next" href="carousel.html#carousel2" class="right carousel-control">
+                                <span class="icon-next"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script th:src="@{/static/js/jquery.min.js?v=2.1.4}" type="text/javascript"></script>
+    <script th:src="@{/static/js/bootstrap.min.js?v=3.3.6}" type="text/javascript"></script>
+    <!-- 自定义js -->
+    <script th:src="@{/static/js/content.js?v=1.0.0}" type="text/javascript"></script>
+
+</body>
+
+</html>
