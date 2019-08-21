@@ -78,9 +78,14 @@
 			<version>2.8.5</version>
 		</dependency>
 		<dependency>
-			<groupId>com.enn.core</groupId>
+			<groupId>com.encdata.core</groupId>
 			<artifactId>platform</artifactId>
-			<version>1.0.0</version>
+			<version>4.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>ognl</groupId>
+			<artifactId>ognl</artifactId>
+			<version>3.1.12</version>
 		</dependency>
 	</dependencies>
 

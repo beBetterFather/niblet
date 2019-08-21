@@ -6,7 +6,7 @@ import com.encdata.corn.niblet.dto.keycloak.KeycloakGroupExt;
 import com.encdata.corn.niblet.dto.keycloak.roles.UseRoleSimpleDto;
 import com.encdata.corn.niblet.enums.RolesEnum;
 import com.encdata.corn.niblet.service.intf.KeycloakProxy;
-import com.enn.core.StringUtils;
+import com.encdata.core.StringUtils;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import org.keycloak.KeycloakPrincipal;
