@@ -52,7 +52,22 @@
                         <div class="logo-element">H+
                         </div>
                     </li>
-         <div th:if="${admin}">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                            <span class="nav-label">博客</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="/NIBLET/blog/list" data-index="0">博客列表</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="index_v2.html">写博客</a>
+                            </li>
+                        </ul>
+                    </li>
+         <div th:if="${admin} and false">
                     <li>
                         <a href="#">
                             <i class="fa fa-home"></i>
@@ -263,9 +278,9 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a class="J_menuItem" href="404.html">404页面</a>
+                            <li><a class="J_menuItem" href="../static/error/404.html">404页面</a>
                             </li>
-                            <li><a class="J_menuItem" href="500.html">500页面</a>
+                            <li><a class="J_menuItem" href="../static/error/500.html">500页面</a>
                             </li>
                             <li><a class="J_menuItem" href="empty_page.html">空白页</a>
                             </li>

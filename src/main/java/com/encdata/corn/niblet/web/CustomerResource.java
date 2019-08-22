@@ -21,11 +21,11 @@ public class CustomerResource {
 
     @PostMapping("/order")
     public void create(@RequestBody Order order){
-        customerService.createOrder(order);
+//        customerService.createOrder(order);
     }
 
-    @GetMapping("/{id}")
-    public Map userInfo(@PathVariable Long id){
-        return customerService.userInfo(id);
-    }
+//    @GetMapping("/{id}")
+//    public Map userInfo(@PathVariable Long id){
+//        return customerService.userInfo(id);
+//    }
 }
