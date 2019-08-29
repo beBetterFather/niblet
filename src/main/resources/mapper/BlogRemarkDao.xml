@@ -171,4 +171,10 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
+
+  <select id="queryBlogRemarks" resultType="com.encdata.corn.niblet.domain.BlogRemark">
+      select <include refid="Base_Column_List" />, remark
+      from blog_remark
+  </select>
+
 </mapper>

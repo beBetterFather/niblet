@@ -15,7 +15,7 @@ public class BlogTag implements Serializable {
     /**
      * 标签类型 1 白色 2 绿色
      */
-    private Boolean type;
+    private int type;
 
     /**
      * 标签
@@ -32,11 +32,11 @@ public class BlogTag implements Serializable {
         this.contentId = contentId;
     }
 
-    public Boolean getType() {
+    public Integer getType() {
         return type;
     }
 
-    public void setType(Boolean type) {
+    public void setType(int type) {
         this.type = type;
     }
 

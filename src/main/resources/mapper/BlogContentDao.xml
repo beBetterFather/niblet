@@ -93,23 +93,12 @@
       for update
     </if>
   </select>
-  <select id="selectByExample" parameterType="com.encdata.corn.niblet.domain.BlogContentExample" resultMap="BaseResultMap">
+  <select id="selectByExample" resultType="com.encdata.corn.niblet.domain.BlogContent">
     select
-    <if test="distinct">
-      distinct
-    </if>
     <include refid="Base_Column_List" />
     from blog_content
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-    <if test="forUpdate != null and forUpdate == true">
-      for update
-    </if>
   </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
     select 
     <include refid="Base_Column_List" />
@@ -248,4 +237,10 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="queryBlogContent" resultType="com.encdata.corn.niblet.domain.BlogContent">
+    select
+    <include refid="Base_Column_List" />, content
+    from blog_content
+  </select>
 </mapper>

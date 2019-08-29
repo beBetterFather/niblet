@@ -164,4 +164,16 @@
     set `count` = #{count,jdbcType=INTEGER}
     where content_id = #{contentId,jdbcType=BIGINT}
   </update>
+
+  <select id="getBlogBrowse" parameterType="java.util.List" resultType="com.encdata.corn.niblet.domain.BlogBrowse">
+      select
+      <include refid="Base_Column_List" />
+      from blog_browse
+      where content_id in
+      <foreach collection="ids" item="item" separator="," open="(" close=")" index="index">
+        #{item}
+      </foreach>
+
+  </select>
+
 </mapper>
